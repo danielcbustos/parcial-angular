@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-6" >
 			<table class="table" >
-				<thead >
+				<thead class="thead">
 					<tr>
 						<th>#</th>
 						<th>Nombre</th>
@@ -10,10 +10,10 @@
 						<th>Región</th>
 					</tr>
 				</thead>
-				<tbody *ngFor="let cafe of cafes">
-					<tr >
+				<tbody class="tbody">
+					<tr *ngFor="let cafe of cafes">
 						<td id="cafeId">{{cafe.id}}</td>
-						<td>{{cafe.nombre}}</td>
+						<td class="nombre-cafe">{{cafe.nombre}}</td>
 						<td>{{cafe.tipo}}</td>
 						<td>{{cafe.region}}</td>
 					</tr>
